@@ -1,0 +1,30 @@
+<div id="carouselExampleIndicators" class="carousel slide custom-border"
+    data-ride="carousel" data-interval="3000">
+  <ol class="carousel-indicators">
+    <li *ngFor="let x of carouselPlaces; let i = index"
+    data-target="#carouselExampleIndicators" [attr.data-slide-to]="i"
+    ngClass="i == 0 ? 'active' : ''"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div *ngFor="let i of carouselPlaces; let k = index"
+    class="carousel-item" [ngClass]="k == 0 ? 'item active' : 'item'">
+      <img class="custom-border d-block w-100 carousel-image" src="../../assets/hot.png" alt="First slide">
+          <div class="carousel-caption">
+            <h5 class="captions-title">Subtitle 1 de subtitles some more</h5>
+            <p class="captions-description">Second Subtitle of the first one in lol some
+              more description is entered here for the restatuant
+            </p>
+            <button id="viewPlaceBtn" type="button" class="btn btn-outline-light btn-lg">
+              View Place</button>
+          </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>

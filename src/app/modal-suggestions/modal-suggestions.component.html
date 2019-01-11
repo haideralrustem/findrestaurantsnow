@@ -1,0 +1,10 @@
+<h2 mat-dialog-title>Select your city: </h2>
+<mat-action-list>
+  <button
+  *ngFor='let city of recievedData' #btn
+  mat-list-item (click)="chooseSuggestion(city)"> {{city.name}} </button>
+</mat-action-list>
+<mat-dialog-actions>
+    <button class="mat-raised-button"(click)="close()">Close</button>
+    <button class="mat-raised-button mat-primary"(click)="save()">Save</button>
+</mat-dialog-actions>

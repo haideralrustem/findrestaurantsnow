@@ -1,0 +1,36 @@
+
+<div>
+  <ul>
+    <li *ngFor="let city of cities | async">
+      {{city.name}}
+    </li>
+  </ul>
+</div>
+
+<hr>
+<ul id='photo-list'>
+  <li *ngFor="let photo of placeGooglePhotos" class='py-2'>
+    <div class="container border">
+      <div class="row">
+        <!-- image section -->
+        <div class=" col-4 col-sm-3 align-self-start border"><img class='img my-3' src="../../assets/hot.png"></div>
+        <div class="col-6 col-sm-6 border">
+          <!-- This is the mid section -->
+          <div class="container">
+            <div class="row"><div class="col-12">Title</div></div>
+            <hr>
+            <div class="row"><div class="col-12">Description</div></div>
+          </div>
+        </div>
+        <div class="col-2 col-sm-3 border">
+          <!-- Tail section -->
+          <div class="container">
+            <div class="row">Tail 1</div>
+            <div class="row">Tail 2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+

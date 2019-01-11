@@ -1,0 +1,36 @@
+.custom-border {
+  border: 3px solid #dff9fb;
+  border-radius: 10px;
+}
+
+#outerWrapper {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url('../../assets/bar.jpg');
+  background-repeat: no-repeat;
+  height: auto;
+}
+#main {
+  height: 626px;
+}
+#title {
+  width: 100%;
+  font-family:  'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  color: white;
+  margin-bottom: 30px;
+}
+h2 {
+  font-size: 4rem;
+}
+h4 {
+  font-size: 3rem;
+}
+#searchBarWrapper {
+  width:100%;
+
+}
+#carouselWrapper {
+  padding: 10% 10%;
+}
+#flex-item {
+  flex: 1;
+}

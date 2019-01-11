@@ -1,0 +1,47 @@
+#carouselExampleIndicators {
+  height: auto;
+  width: 100%;
+  max-width: 710px;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.custom-border {
+  border: 3px ridge #dff9fb;
+  border-radius: 10px;
+}
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+.carousel-image {
+  height: auto;
+  width: 100%;
+  max-width: 700px;
+  max-height: 550px;
+}
+#viewPlaceBtn {
+  height:auto;
+  width: 100%;
+  max-width: 171px;
+  font-size: 2vw;
+}
+.captions-title {
+  font-size: 4vw;
+  text-align: left;
+  text-shadow: 1px 1px 30px rgb(7, 7, 7);
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+.captions-description {
+  font-size: 2vw;
+  text-align: left;
+  text-shadow: 1px 1px 30px rgb(44, 44, 44);
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+
+@media screen and (max-width: 320px) {
+  .captions {
+
+  }
+}

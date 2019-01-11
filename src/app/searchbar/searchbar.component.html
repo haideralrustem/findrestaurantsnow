@@ -1,0 +1,37 @@
+<div id="container" class="container">
+<div class="row border">
+  <div class="col-12 border">
+    <form (ngSubmit)='onSubmitSearch(f)' #f='ngForm'>
+
+        <div class="border form-group">
+          <label for="name"></label>
+              <input
+                placeholder="Search for city here.."
+                type="text"
+                id="name"
+                class="form-control rounded-border"
+                name='searchCity'
+                required
+                ngModel
+                >
+        </div>
+        <div class="row justify-content-start">
+          <div class="col-8">
+            <button id="searchBtn" class="btn btn-primary search-bar-buttons rounded-border"
+            type="submit"
+            [disabled]='!f.valid'>Search</button>
+          </div>
+          <div class="col-4">
+            <button id="clearBtn" class="btn btn-danger search-bar-buttons rounded-border"
+            (click)='clearForm(f)' type="button">Clear</button>
+          </div>
+        </div>
+
+    </form>
+  </div>
+</div>
+</div>
+<hr>
+
+
+
